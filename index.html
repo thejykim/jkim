@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>thejyk | Joseph Kim</title>
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+	    <!-- google fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand&display=swap" rel="stylesheet">
+	    
+	    <!-- analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175870671-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-175870671-1');
+        </script>
+
+	    <style>
+	    	html, body {
+	    		height: 100%;
+	    	}
+
+	    	body {
+	    		display: flex;
+	    		flex-direction: column;
+	    	}
+
+	    	.main-body {
+	    		flex: 1 0 auto;
+	    	}
+
+	    	.footer {
+	    		flex-shrink: 0;
+	    	}
+
+	    	.josefin-sans {
+	    		font-family: 'Josefin Sans', sans-serif;
+	    	}
+
+	    	.quicksand {
+	    		font-family: 'Quicksand', sans-serif;
+	    	}
+	    	
+	    	.has-text-orange {
+	    	    color: #FFA500;
+	    	}
+
+	    	::selection {
+				background: #33d1b1;
+				color:white;
+			}
+
+			::-moz-selection {
+				background: #33d1b1;
+				color:white;
+			}
+	    </style>
+	</head>
+	
+	<body>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<h2 class="navbar-item josefin-sans" style="font-size:24px">thejyk</h2>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+					     <span aria-hidden="true"></span>
+					     <span aria-hidden="true"></span>
+					     <span aria-hidden="true"></span>
+				    </a>
+				</div>
+
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item quicksand">
+							Home
+						</a>
+						<a class="navbar-item quicksand" href="projects">
+							Projects
+						</a>
+						<a class="navbar-item quicksand" href="storage">
+							Storage
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main-body">
+			<section class="section">
+				<div class="container" style="border: 1.5px solid lightgray; border-radius: 40px; padding: 2rem">
+				    <div class="columns">
+				        <div class="column" style="max-width: 400px; text-align: center">
+					        <img style="border-radius: 50%; max-height: 300px" src="https://i.imgur.com/qAhFnmq.jpg">
+				        </div>
+				        
+				        <div class="column" style="display: flex; align-items: center">
+				            <div id="desc">
+    				            <h3 class="title is-3 josefin-sans">Hi, I'm Joseph 👋</h3>
+    				            <div class="subtitle is-5 quicksand">
+    				                I study CS @ UNC-CH.
+    				            </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</section>
+			
+		    <div class="container">
+		        <h4 class="title is-4 josefin-sans">Projects</h4>
+		        <hr>
+		    </div>
+		    
+		    <div class="container">
+		        <article class="message">
+                    <div class="message-body quicksand">
+                        Primary technologies used are listed to the right of each project. See it in action by clicking its title!
+                    </div>
+                </article>
+		        
+		        <!-- first row -->
+		        <div class="columns">
+		            <div class="column is-one-third">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 1px solid lightgray">
+		                    <div class="card-content">
+		                        <div class="content">
+		                            <h5 class="title is-5 josefin-sans"><a href="https://intellinote.io" class="has-text-primary" target="_blank">intellinote</a> &nbsp;<span class="icon is-small has-text-info"><i class="fab fa-php"></i></span> &nbsp;<span class="icon is-small has-text-orange"><i class="fas fa-database"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">An intuitive music creation kit. Features a standalone social platform for song creators.</p>
+		                            <a href="https://github.com/thejykim/intellinote" target="_blank"><button class="button is-small">
+		                                <span class="icon is-small"><i class="fab fa-github"></i></span>
+		                                <span class="quicksand">GitHub</span>
+		                            </button></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		            <div class="column is-one-third">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 2px solid gold">
+		                    <div class="card-content">
+		                        <div class="content">
+		                            <h5 class="title is-5 josefin-sans"><a href="https://pankoapp.com" class="has-text-primary" target="_blank">panko</a> <span class="icon is-small has-text-danger"><i class="fab fa-angular"></i></span> <span class="icon is-small has-text-success"><i class="fab fa-node-js"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">Productivity assistant that learns as you use it.</p>
+		                            <a href="https://github.com/thejykim/pankoapp" target="_blank"><button class="button is-small">
+		                                <span class="icon is-small"><i class="fab fa-github"></i></span>
+		                                <span class="quicksand">GitHub</span>
+		                            </button></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		            <div class="column">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 1px solid lightgray">
+		                    <div class="card-content">
+		                        <div class="content quicksand">
+		                            <h5 class="title is-5 josefin-sans"><a href="projects/cdc2019" class="has-text-primary" target="_blank">crime hotspots</a> <span class="icon is-small has-text-info"><i class="fab fa-python"></i></span> <span class="icon is-small has-text-orange"><i class="fab fa-java"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">Application of a clustering algorithm to classify crime hotspots.</p>
+		                            <a href="https://github.com/thejykim/planner" target="_blank"><button class="button is-small">
+		                                <span class="icon is-small"><i class="fab fa-github"></i></span>
+		                                <span class="quicksand">GitHub</span>
+		                            </button></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		        <!-- second row -->
+		        <div class="columns">
+		            <div class="column">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 1px solid lightgray">
+		                    <div class="card-content">
+		                        <div class="content quicksand">
+		                            <h5 class="title is-5 josefin-sans"><a href="projects/planner" class="has-text-primary" target="_blank">planner</a> &nbsp;<span class="icon is-small has-text-info"><i class="fab fa-php"></i></span>&nbsp;<span class="icon is-small has-text-danger"><i class="fab fa-html5"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">A personal planner that utilizes <code>SHA-2</code> to protect individual user identity. Data stored as plaintext.</p>
+		                            <a href="https://github.com/thejykim/planner" target="_blank"><button class="button is-small">
+		                                <span class="icon is-small"><i class="fab fa-github"></i></span>
+		                                <span class="quicksand">GitHub</span>
+		                            </button></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		            <div class="column">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 1px solid lightgray">
+		                    <div class="card-content">
+		                        <div class="content quicksand">
+		                            <h5 class="title is-5 josefin-sans"><a href="projects/shelterjs" class="has-text-primary" target="_blank">shelterjs</a> <span class="icon is-small has-text-danger"><i class="fab fa-html5"></i></span> <span class="icon is-small has-text-warning"><i class="fab fa-js-square"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">An attempted web-based game based on Fallout Shelter.</p>
+		                            <a href="https://github.com/thejykim/shelterjs" target="_blank"><button class="button is-small">
+		                                <span class="icon is-small"><i class="fab fa-github"></i></span>
+		                                <span class="quicksand">GitHub</span>
+		                            </button></a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+		            <div class="column is-one-third">
+		                <div class="card" style="border-radius: 15px 40px; min-height: 10.5rem; border: 1px solid lightgray">
+		                    <div class="card-content">
+		                        <div class="content">
+		                            <h5 class="title is-5 josefin-sans"><a href="projects/HongKong" class="has-text-primary" target="_blank">HongKong</a> <span class="icon is-small has-text-danger"><i class="fab fa-html5"></i></span> <span class="icon is-small has-text-warning"><i class="fab fa-js-square"></i></span></h5>
+		                            <p class="subtitle is-6 quicksand">News aggregate of Hong Kong happenings from the NY Times and the Guardian.</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    
+		    <!-- just an empty container for padding -->
+		    <div style="padding: 2rem"></div>
+		    
+		    <div class="container" style="text-align: right">
+		        <h4 class="title is-4 josefin-sans">More info</h4>
+		        <hr>
+		    </div>
+		    
+		    <div class="container">
+		        <div class="card" style="border-radius: 40px; border: 1px solid lightgray">
+		            <div class="card-content">
+		                <div class="media">
+		                    <div class="media-content quicksand" style="text-align: right">
+		                        <p class="title is-4">Joseph Kim</p>
+		                        <p class="subtitle is-6">
+		                            I'm currently a sophomore studying CS at UNC, and thoroughly enjoy applying what I learn to make life around me easier.<br>
+		                            Also a big fan of cloud computing and particularly of what their free tiers have to offer.
+		                            <br><br>
+		                            View my other profiles around the web below!
+		                        </p>
+		                    </div>
+		                    <div class="media-right">
+		                        <figure class="image is-128x128">
+		                            <img src="https://i.imgur.com/Bidwejp.jpg" style="border-radius: 50%">
+		                        </figure>
+		                    </div>
+		                </div>
+		                <div class="content" style="display: flex; justify-content: center">
+		                    <div class="buttons">
+    		                    <a class="button is-outlined quicksand" href="https://github.com/thejykim" target="_blank">
+    		                        <span class="icon">
+    		                            <i class="fab fa-github"></i>
+    		                        </span>
+    		                        <span>GitHub</span>
+    		                    </a>
+    		                    
+    		                    <a class="button is-outlined quicksand" href="https://www.linkedin.com/in/thejykim" target="_blank">
+    		                        <span class="icon has-text-link">
+    		                            <i class="fab fa-linkedin"></i>
+    		                        </span>
+    		                        <span>LinkedIn</span>
+    		                    </a>
+    		                    
+    		                    <a class="button is-outlined quicksand" href="/storage/Resume2020.pdf" target="_blank">
+    		                        <span class="icon has-text-danger">
+    		                            <i class="far fa-file-pdf"></i>
+    		                        </span>
+    		                        <span>Resume</span>
+    		                    </a>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    
+		    <!-- just an empty container for padding -->
+		    <div style="padding: 2rem"></div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer" style="padding: 4rem 1.5rem 4rem">
+			<div class="container">
+				<p class="quicksand">Made with <a href="https://bulma.io" class="has-text-primary">Bulma</a>.</p>
+			</div>
+		</footer>
+		
+		<!-- navbar script -->
+		<script>
+        document.addEventListener('DOMContentLoaded', () => {
+        
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+        
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+              el.addEventListener('click', () => {
+        
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+        
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+        
+              });
+            });
+          }
+        
+        });
+        </script>
+	</body>    
+</html>

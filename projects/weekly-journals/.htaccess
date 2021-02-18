@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "weekly-journals"
+AuthUserFile "/home/thejykco/.htpasswds/public_html/projects/weekly-journals/passwd"
+require valid-user

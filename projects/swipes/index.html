@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<head>
+		<title>Swipes | UNC</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="container" style="margin-top:2.5%;margin-bottom:2.5%">
+			<h2>meal swipes calculator</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- input and stats panel -->
+				<div class="col-6">
+					<!-- input form for number of swipes -->
+					<div class="form-group">
+						<label for="numSwipes" class="col-form-label col-form-label-sm">Number of swipes remaining:</label>
+						<input type="text" class="form-control" id="numSwipes" name="numSwipes"></br>
+						<div id="plusSwipes" style="display: none">
+							<label for="numPlusSwipes" class="col-form-label col-form-label-sm">Number of plus swipes remaining:</label>
+							<input type="text" class="form-control" id="numPlusSwipes" name="numPlusSwipes"></br>
+						</div>
+						<button onclick="start()" class="btn btn-secondary">Calculate</button></br>
+					</div>
+
+					<!-- show advanced settings -->
+					<button id="toggleSettings" type="button" class="btn btn-outline-primary btn-sm" onclick="toggleSettings()">show advanced settings</button></br></br>
+
+					<!-- paragraph of results -->
+					<p id="results"></p>
+					<p id="extraResults"></p>
+				</div>
+
+				<!-- settings panel -->
+				<div class="col-6">
+					<div class="card" id="advancedSettings" style="display: none">
+						<div class="card-body">
+							<h5 class="card-title">Advanced settings</h5>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="weekdays">
+								<label for="weekdays" class="custom-control-label">Weekdays only</label><br>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="detailedStats">
+								<label for="detailedStats" class="custom-control-label">Detailed stats</label><br>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="plusSwipesToggle" onclick="plusSwipeText()">
+								<label for="plusSwipesToggle" class="custom-control-label">Plus swipes</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- js files -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+
+		<!-- bootstrap, jQuery, etc -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
